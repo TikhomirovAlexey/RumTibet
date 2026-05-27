@@ -1,15 +1,148 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>РумТибет</title>
-    <link rel="stylesheet" href="style/style.css">
-</head>
-<body style="background-color: black;">
-    <button class="button button_lite">lorem</button>
-    <a href="#" class="link">kink</a>
-    <a href="#" class="link link_small">link small</a>
-    <a href="#" class="link link_small link_new">link small</a>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>РумТибет</title>
+        <link rel="shortcut icon" href="img/ico/logo.svg" type="image/x-icon">
+        <link rel="stylesheet" href="style/style.css">
+    </head>
+    <body>
+        <section class="banner">
+            <div class="banner__inner container">
+                <header class="header">
+                    <a href="index.html" class="logo">
+                        <img
+                            src="img/ico/logo.svg"
+                            alt=""
+                            width="137"
+                            height="72"
+                            loading="lazy"
+                        >
+                    </a>
+                    <nav class="nav header__nav tablet-hidden">
+                        <ul class="list-row header__list-row">
+                            <li class="list-item">
+                                <a href="#" class="link header__link">Главная</a>
+                            </li>
+                            <li class="list-item">
+                                <a href="#" class="link header__link">Про гида</a>
+                            </li>
+                            <li class="list-item">
+                                <a href="#" class="link header__link">Программа тура</a>
+                            </li>
+                            <li class="list-item">
+                                <a href="#" class="link header__link">Стоимость</a>
+                            </li>
+                            <li class="list-item">
+                                <a href="#" class="link header__link">Блог</a>
+                            </li>
+                            <li class="list-item">
+                                <a href="#" class="link header__link">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <button class="button button_small header__button tablet-hidden" type="button">Консультация</button>
+                    <div class="desktop-hidden">
+                        <button class="button-transparent desktop-hidden button-icon header__button-transparent" type="button" onclick="mobileMenu.showModal()">
+                            <span class="visually-hidden">Открыть меню</span>
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="30"
+                                height="30"
+                                viewBox="0 0 30 30"
+                                fill="none"
+                            >
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M4.5 7.5C4.5 7.10218 4.65804 6.72064 4.93934 6.43934C5.22064 6.15804 5.60218 6 6 6H24C24.3978 6 24.7794 6.15804 25.0607 6.43934C25.342 6.72064 25.5 7.10218 25.5 7.5C25.5 7.89782 25.342 8.27936 25.0607 8.56066C24.7794 8.84196 24.3978 9 24 9H6C5.60218 9 5.22064 8.84196 4.93934 8.56066C4.65804 8.27936 4.5 7.89782 4.5 7.5ZM4.5 15C4.5 14.6022 4.65804 14.2206 4.93934 13.9393C5.22064 13.658 5.60218 13.5 6 13.5H24C24.3978 13.5 24.7794 13.658 25.0607 13.9393C25.342 14.2206 25.5 14.6022 25.5 15C25.5 15.3978 25.342 15.7794 25.0607 16.0607C24.7794 16.342 24.3978 16.5 24 16.5H6C5.60218 16.5 5.22064 16.342 4.93934 16.0607C4.65804 15.7794 4.5 15.3978 4.5 15ZM13.5 22.5C13.5 22.1022 13.658 21.7206 13.9393 21.4393C14.2206 21.158 14.6022 21 15 21H24C24.3978 21 24.7794 21.158 25.0607 21.4393C25.342 21.7206 25.5 22.1022 25.5 22.5C25.5 22.8978 25.342 23.2794 25.0607 23.5607C24.7794 23.842 24.3978 24 24 24H15C14.6022 24 14.2206 23.842 13.9393 23.5607C13.658 23.2794 13.5 22.8978 13.5 22.5Z"
+                                    fill="white"
+                                />
+                            </svg>
+                        </button>
+                    </div>
+                </header>
+                <div class="info-box"></div>
+            </div>
+        </section>
+        <dialog class="mobile-menu" id="mobileMenu" aria-label="Мобильное меню">
+            <div class="mobile-menu__close-button">
+                <button class="button-transparent button-icon header__button-transparent mobile-menu__button-transparent" onclick="mobileMenu.close()" type="button">
+                    <span class="visually-hidden">Кнопка закрыть меню</span>
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                    >
+                        <path d="M6.4 19L5 17.6L10.6 12L5 6.4L6.4 5L12 10.6L17.6 5L19 6.4L13.4 12L19 17.6L17.6 19L12 13.4L6.4 19Z" fill="white"/>
+                    </svg>
+                </button>
+            </div>
+            <ul class="list-column mobile-menu__list-column">
+                <li class="list-item list-item_with-arrow-to-right">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="6"
+                        height="10"
+                        viewBox="0 0 6 10"
+                        fill="none"
+                    >
+                        <path d="M5.7154 4.6098L1.26527 0.159755C1.16235 0.0567475 1.02495 0 0.878448 0C0.731945 0 0.594548 0.0567475 0.491622 0.159755L0.163901 0.487394C-0.0493491 0.700889 -0.0493491 1.04788 0.163901 1.26105L3.90078 4.99793L0.159755 8.73895C0.0568288 8.84196 0 8.97928 0 9.1257C0 9.27228 0.0568288 9.4096 0.159755 9.51269L0.487476 9.84024C0.590483 9.94325 0.727799 10 0.874302 10C1.0208 10 1.1582 9.94325 1.26113 9.84024L5.7154 5.38613C5.81857 5.2828 5.87524 5.14484 5.87491 4.99817C5.87524 4.85094 5.81857 4.71305 5.7154 4.6098Z" fill="#FDFDFD"/>
+                    </svg>
+                    <a href="#" class="link link_small mobile-menu__link">Про гида</a>
+                </li>
+                <li class="list-item list-item_with-arrow-to-right">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="6"
+                        height="10"
+                        viewBox="0 0 6 10"
+                        fill="none"
+                    >
+                        <path d="M5.7154 4.6098L1.26527 0.159755C1.16235 0.0567475 1.02495 0 0.878448 0C0.731945 0 0.594548 0.0567475 0.491622 0.159755L0.163901 0.487394C-0.0493491 0.700889 -0.0493491 1.04788 0.163901 1.26105L3.90078 4.99793L0.159755 8.73895C0.0568288 8.84196 0 8.97928 0 9.1257C0 9.27228 0.0568288 9.4096 0.159755 9.51269L0.487476 9.84024C0.590483 9.94325 0.727799 10 0.874302 10C1.0208 10 1.1582 9.94325 1.26113 9.84024L5.7154 5.38613C5.81857 5.2828 5.87524 5.14484 5.87491 4.99817C5.87524 4.85094 5.81857 4.71305 5.7154 4.6098Z" fill="#FDFDFD"/>
+                    </svg>
+                    <a href="#" class="link link_small mobile-menu__link">Программа тура</a>
+                </li>
+                <li class="list-item list-item_with-arrow-to-right">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="6"
+                        height="10"
+                        viewBox="0 0 6 10"
+                        fill="none"
+                    >
+                        <path d="M5.7154 4.6098L1.26527 0.159755C1.16235 0.0567475 1.02495 0 0.878448 0C0.731945 0 0.594548 0.0567475 0.491622 0.159755L0.163901 0.487394C-0.0493491 0.700889 -0.0493491 1.04788 0.163901 1.26105L3.90078 4.99793L0.159755 8.73895C0.0568288 8.84196 0 8.97928 0 9.1257C0 9.27228 0.0568288 9.4096 0.159755 9.51269L0.487476 9.84024C0.590483 9.94325 0.727799 10 0.874302 10C1.0208 10 1.1582 9.94325 1.26113 9.84024L5.7154 5.38613C5.81857 5.2828 5.87524 5.14484 5.87491 4.99817C5.87524 4.85094 5.81857 4.71305 5.7154 4.6098Z" fill="#FDFDFD"/>
+                    </svg>
+                    <a href="#" class="link link_small mobile-menu__link">Стоимость</a>
+                </li>
+                <li class="list-item list-item_with-arrow-to-right">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="6"
+                        height="10"
+                        viewBox="0 0 6 10"
+                        fill="none"
+                    >
+                        <path d="M5.7154 4.6098L1.26527 0.159755C1.16235 0.0567475 1.02495 0 0.878448 0C0.731945 0 0.594548 0.0567475 0.491622 0.159755L0.163901 0.487394C-0.0493491 0.700889 -0.0493491 1.04788 0.163901 1.26105L3.90078 4.99793L0.159755 8.73895C0.0568288 8.84196 0 8.97928 0 9.1257C0 9.27228 0.0568288 9.4096 0.159755 9.51269L0.487476 9.84024C0.590483 9.94325 0.727799 10 0.874302 10C1.0208 10 1.1582 9.94325 1.26113 9.84024L5.7154 5.38613C5.81857 5.2828 5.87524 5.14484 5.87491 4.99817C5.87524 4.85094 5.81857 4.71305 5.7154 4.6098Z" fill="#FDFDFD"/>
+                    </svg>
+                    <a href="#" class="link link_small mobile-menu__link">Блог</a>
+                </li>
+                <li class="list-item list-item_with-arrow-to-right">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="6"
+                        height="10"
+                        viewBox="0 0 6 10"
+                        fill="none"
+                    >
+                        <path d="M5.7154 4.6098L1.26527 0.159755C1.16235 0.0567475 1.02495 0 0.878448 0C0.731945 0 0.594548 0.0567475 0.491622 0.159755L0.163901 0.487394C-0.0493491 0.700889 -0.0493491 1.04788 0.163901 1.26105L3.90078 4.99793L0.159755 8.73895C0.0568288 8.84196 0 8.97928 0 9.1257C0 9.27228 0.0568288 9.4096 0.159755 9.51269L0.487476 9.84024C0.590483 9.94325 0.727799 10 0.874302 10C1.0208 10 1.1582 9.94325 1.26113 9.84024L5.7154 5.38613C5.81857 5.2828 5.87524 5.14484 5.87491 4.99817C5.87524 4.85094 5.81857 4.71305 5.7154 4.6098Z" fill="#FDFDFD"/>
+                    </svg>
+                    <a href="#" class="link link_small mobile-menu__link">Контакты</a>
+                </li>
+            </ul>
+        </dialog>
+    </body>
 </html>

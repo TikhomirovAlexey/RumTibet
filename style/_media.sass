@@ -1,0 +1,20 @@
+@media (width <= 1100px)
+
+    .header
+        gap: 24px
+        &__list-row
+            column-gap: 14px
+
+@media (width <= 1024px)
+
+    .tablet-hidden
+        display: none
+
+    .desktop-hidden
+        display: block
+
+    .header
+        grid-template-columns: auto  auto
+        justify-content: space-between
+
+@media (width <= 768px)

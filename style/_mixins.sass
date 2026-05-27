@@ -15,10 +15,6 @@
     left: 50%
     translate: -50% -50%
 
-@mixin square($size)
-    width: $size
-    aspect-ratio: 1
-
 @mixin visually-hidden
     position: absolute !important
     width: 1px !important
@@ -31,15 +27,12 @@
     clip: rect(0 0 0 0) !important
     overflow: hidden !important
 
-@mixin flex-row-center($gap)
+@mixin flex-row-center($gap: 0)
     display: flex
     justify-content: center
     align-items: center
     gap: $gap
 
-@mixin flex-column-center($gap)
-    display: flex
+@mixin flex-column-center($gap: 0)
+    @include flex-row-center($gap)
     flex-direction: column
-    justify-content: center
-    align-items: center
-    gap: $gap
