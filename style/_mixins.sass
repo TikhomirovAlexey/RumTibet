@@ -1,5 +1,13 @@
 @mixin fluid-text($min, $max)
-    font-size: clamp(#{$min}px, #{$max / 1920 * 100}vw, #{$max}px)
+    font-size: clamp(#{$min}px, #{$max / 1180 * 100}vw, #{$max}px)
+
+@mixin hover
+    @media (hover: hover)
+        &:hover
+            @content
+    @media (hover: none)
+        &:active
+            @content
 
 @mixin abs-center
     position: absolute

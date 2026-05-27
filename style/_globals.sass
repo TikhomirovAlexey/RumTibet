@@ -1,0 +1,97 @@
+body
+    font-family: var(--font-family-base)
+    color: var(--color-dark-alternate)
+    background-color: var(--color-lite)
+
+a, button
+    transition: all .3s
+    white-space: nowrap
+
+.container
+    max-width: calc( var(--container-width) + var(--container-padding-inline) * 2 )
+    padding-inline: var(--container-padding-inline)
+    margin-inline: auto
+
+.visually-hidden
+    @include visually-hidden
+
+.section-padding-block
+    padding-block: var(--section-padding-block-desctop)
+
+.title
+    color: var(--color-lite-alternate)
+    font-family: var(--font-family-accent)
+    @include fluid-text(28, 50)
+    font-weight: 700
+    letter-spacing: 1px
+    text-transform: uppercase
+
+.heading
+    text-align: center
+    @include fluid-text(24, 32)
+    font-weight: 800
+    line-height: 1.2
+    @include flex-column-center(8px)
+    &_with-preface::before
+        content: attr(data-preface)
+        font-size: 0.75em
+        color: var(--color-accent-alternate)
+        line-height: 1
+        font-weight: 400
+    &_small
+        @include fluid-text(24, 26)
+
+.subheading
+    @include fluid-text(20, 24)
+    font-weight: 700
+    line-height: 1.3
+
+.text
+    @include fluid-text(16, 18)
+    font-weight: 400
+    &_small
+        font-style: 14px
+        line-height: 1.42
+    &_dark
+        color: var(--color-dark)
+    &_lite
+        color: var(--color-lite)
+
+.button
+    color: var(--color-lite-alternate)
+    font-size: 16px
+    font-weight: 600
+    line-height: 1.25
+    letter-spacing: 0.192px
+    background-color: var(--color-accent)
+    border: 1px solid transparent
+    border-radius: 4px
+    padding: var(--padding-button)
+    @include hover
+        border-color: var(--color-accent)
+        background-color: var(--color-lite-alternate)
+        color: var(--color-accent)
+    &_small
+        padding: var(--padding-button-small)
+    &_lite
+        font-weight: 700
+        background-color: var(--color-lite-alternate)
+        color: var(--color-accent)
+        @include hover
+            border-color: var(--color-lite-alternate)
+            background-color: var(--color-accent)
+            color: var(--color-lite-alternate)
+
+.link
+    color: var(--color-lite-alternate)
+    font-size: 18px
+    font-weight: 600
+    text-decoration: none
+    @include hover
+        color: var(--color-accent-alternate)
+    &_small
+        font-size: 14px
+        font-weight: 400
+        line-height: 1.28
+        @include hover
+            text-decoration: underline
