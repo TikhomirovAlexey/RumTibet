@@ -218,3 +218,42 @@
         font-weight: 400
     &__button
         align-self: end
+
+.item-box
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    gap: 24px 20px
+    
+.item
+    display: flex
+    gap: 24px
+    max-width: 580px
+    padding: 16px
+    background-color: var(--color-lite-alternate)
+    border-radius: 10px
+    box-shadow: 0 0 15px 0 rgba(24, 18, 30, 0.12)
+    & > img
+        width: 230px
+        border-radius: 6px
+    &__body
+        flex: 1
+        padding: 16px 0
+        display: grid
+        grid-template-rows: auto 1fr auto
+        gap: 24px
+    &__footer
+        display: flex
+        justify-content: space-between
+    &__time
+        color: var(--color-accent-alternate)
+        font-size: 14px
+        font-weight: 700
+        line-height: 1.42
+    &__link
+        text-decoration: none
+        color: var(--color-accent)
+        font-size: 14px
+        font-weight: 700
+        line-height: 1.42
+        @include hover
+            text-decoration: underline
