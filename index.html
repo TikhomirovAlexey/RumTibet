@@ -63,9 +63,230 @@
                         </button>
                     </div>
                 </header>
-                <div class="info-box"></div>
+                <div class="banner__info">
+                    <h1 class="title">
+                        Насладись прогулкой в горах с командой единомышленников
+                    </h1>
+                    <form action="#" class="form banner__form">
+                        <fieldset class="form-item mobile-hidden">
+                            <legend class="visually-hidden">Выберете из списка локаций</legend>
+                            <label class="visually-hidden" for="location">Список локаций</label>
+                            <select class="input" name="location" id="location">
+                                <option value="" disabled selected>Локация для тура</option>
+                                <option value="Lorem1">Lorem-1</option>
+                                <option value="Lorem2">Lorem-2</option>
+                            </select>
+                            <p class="input__description">выберите из списка</p>
+                        </fieldset>
+                        <fieldset class="form-item mobile-hidden">
+                            <legend class="visually-hidden">Выберете дату</legend>
+                            <label class="visually-hidden" for="dateExpedition">Дата похода</label>
+                            <input
+                                class="input"
+                                type="date"
+                                name="dateExpedition"
+                                id="dateExpedition"
+                                placeholder="Дата похода"
+                            >
+                            <p class="input__description">укажите диапазон</p>
+                        </fieldset>
+                        <fieldset class="form-item mobile-hidden">
+                            <legend class="visually-hidden">Укажите количество участников</legend>
+                            <label class="visually-hidden" for="participantsNumber">Количество участников</label>
+                            <input
+                                class="input"
+                                type="number"
+                                name="participantsNumber"
+                                id="participantsNumber"
+                                placeholder="Участники"
+                                min="4"
+                            >
+                            <p class="input__description">минимум 4 человека</p>
+                        </fieldset>
+                        <a href="#" class="button button_lite">Найти программу</a>
+                    </form>
+                </div>
             </div>
         </section>
+        <main class="content">
+            <section class="section">
+                <div class="about-hike section__inner section__inner_row container">
+                    <div class="media-box">
+                        <img
+                            class="media-box__item"
+                            src="img/Lonely-mountain.jpg"
+                            alt="Одинокая гора"
+                            width="350"
+                            height="400"
+                            loading="lazy"
+                        >
+                        <div class="media-box__item media-box__item_pos-top">
+                            <div class="video-wrapper">
+                                <img
+                                    class="media-box__item"
+                                    src="img/A-lonely-house-on-a-mountain-background.jpg"
+                                    alt="Одинокая гора"
+                                    width="350"
+                                    height="400"
+                                    loading="lazy"
+                                >
+                                <button class="play-button" type="button">
+                                    <svg
+                                        width="22"
+                                        height="22"
+                                        viewBox="0 0 22 22"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path d="M8.24267 3.65572C7.96389 3.49647 7.64819 3.41323 7.32714 3.41432C7.00609 3.4154 6.69096 3.50078 6.41326 3.6619C6.13557 3.82302 5.90506 4.05424 5.74479 4.33242C5.58451 4.6106 5.5001 4.926 5.5 5.24705V16.7549C5.5001 17.0759 5.58451 17.3913 5.74479 17.6695C5.90506 17.9477 6.13557 18.1789 6.41326 18.34C6.69096 18.5012 7.00609 18.5865 7.32714 18.5876C7.64819 18.5887 7.96389 18.5055 8.24267 18.3462L18.3113 12.5914C18.5917 12.431 18.8248 12.1993 18.9869 11.9199C19.1489 11.6404 19.2343 11.3231 19.2343 11C19.2343 10.677 19.1489 10.3597 18.9869 10.0802C18.8248 9.80079 18.5917 9.56913 18.3113 9.40872L8.24267 3.65572Z" fill="#1A3E3E"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section__body section__body_with-width">
+                        <h2 class="heading heading_with-preface" data-preface="о нашем походе">Исследуйте все горные массивы мира вместе с нами</h2>
+                        <p class="text">Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney, штат Вирджиния, взял одно из самых странных слов в Lorem Ipsum, "consectetur"и занялся его поисками в классической латинской литературе.</p>
+                        <button class="button button_tablet-center-x" type="button">Программа тура</button>
+                    </div>
+                </div>
+            </section>
+            <section class="section">
+                <div class="best-program section__inner section__inner_row container">
+                    <div class="section__body section__body_with-width">
+                        <h2 class="heading heading_with-preface" data-preface="наше предложение">Лучшие программы для тебя</h2>
+                        <p class="text">Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа.</p>
+                        <h3 class="visually-hidden">Преимущества</h3>
+                        <ul class="list-column best-program__list-column">
+                            <li class="list-item best-program__list-item">
+                                <img
+                                    src="img/ico/guide.svg"
+                                    width="50"
+                                    height="50"
+                                    loading="lazy"
+                                    alt=""
+                                >
+                                <div class="list-item-body">
+                                    <h4 class="title-small">Опытный гид</h4>
+                                    <p class="text text_small">Для современного мира базовый вектор развития предполагает независимые способы реализации соответствующих условий активизации.</p>
+                                </div>
+                            </li>
+                            <li class="list-item best-program__list-item">
+                                <img
+                                    src="img/ico/safe.svg"
+                                    width="50"
+                                    height="50"
+                                    loading="lazy"
+                                    alt=""
+                                >
+                                <div class="list-item-body">
+                                    <h4 class="title-small">Безопасный поход</h4>
+                                    <p class="text text_small">Для современного мира базовый вектор развития предполагает независимые способы реализации соответствующих условий активизации.</p>
+                                </div>
+                            </li>
+                            <li class="list-item best-program__list-item">
+                                <img
+                                    src="img/ico/prices.svg"
+                                    width="50"
+                                    height="50"
+                                    loading="lazy"
+                                    alt=""
+                                >
+                                <div class="list-item-body">
+                                    <h4 class="title-small">Лояльные цены</h4>
+                                    <p class="text text_small">Для современного мира базовый вектор развития предполагает независимые способы реализации соответствующих условий активизации.</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <button class="button button_tablet-center-x" type="button">Стоимость программ</button>
+                    </div>
+                    <div class="best-program__img-box mobile-hidden">
+                        <img
+                            class="best-program__img best-program__img_top-left"
+                            src="img/tea-in-background-sea.jpg"
+                            alt="Стакан чая на фоне моря"
+                            width="250"
+                            height="250"
+                            loading="lazy"
+                        >
+                        <img
+                            class="best-program__img best-program__img_top-right"
+                            src="img/men-in-background-mountain.jpg"
+                            alt="Мужчина на фоне гор"
+                            width="250"
+                            height="250"
+                            loading="lazy"
+                        >
+                        <img
+                            class="best-program__img best-program__img_bottom-left"
+                            src="img/men-in-background-snow.jpg"
+                            alt="Мужчина на фоне снега"
+                            width="250"
+                            height="250"
+                            loading="lazy"
+                        >
+                        <img
+                            class="best-program__img best-program__img_bottom-right"
+                            src="img/mountains.jpg"
+                            alt="горы"
+                            width="250"
+                            height="250"
+                            loading="lazy"
+                        >
+                    </div>
+                </div>
+            </section>
+            <section class="section">
+                <div class="section__inner section__inner_column container">
+                    <h2 class="heading heading_with-preface heading_text-center" data-preface="наше предложение">Лучшие программы для тебя</h2>
+                    <div class="card-box">
+                        <article class="card card_1">
+                            <div class="card__body">
+                                <header class="card__header">
+                                    <h3 class="subheading subheading_lite subheading_with-preface" data-preface="романтическое приключение">Озеро возле гор</h3>
+                                    <p class="card__price">480 $</p>
+                                </header>
+                                <p class="card__text">
+                                    Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney, штат Вирджиния, взял одно из самых странных слов в Lorem Ipsum, "consectetur"и занялся его поисками в классической латинской литературе.
+                                </p>
+                                <button class="button card__button" type="button">
+                                    Программа тура
+                                </button>
+                            </div>
+                        </article>
+                        <article class="card card_2">
+                            <div class="card__body">
+                                <header class="card__header">
+                                    <h3 class="subheading subheading_lite subheading_with-preface" data-preface="романтическое приключение">Ночь в горах</h3>
+                                    <p class="card__price">500 $</p>
+                                </header>
+                                <p class="card__text">
+                                    Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney, штат Вирджиния, взял одно из самых странных слов в Lorem Ipsum, "consectetur"и занялся его поисками в классической латинской литературе.
+                                </p>
+                                <button class="button card__button" type="button">
+                                    Программа тура
+                                </button>
+                            </div>
+                        </article>
+                        <article class="card card_3">
+                            <div class="card__body">
+                                <header class="card__header">
+                                    <h3 class="subheading subheading_lite subheading_with-preface" data-preface="романтическое приключение">Йога в горах</h3>
+                                    <p class="card__price">230 $</p>
+                                </header>
+                                <p class="card__text">
+                                    Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney, штат Вирджиния, взял одно из самых странных слов в Lorem Ipsum, "consectetur"и занялся его поисками в классической латинской литературе.
+                                </p>
+                                <button class="button card__button" type="button">
+                                    Программа тура
+                                </button>
+                            </div>
+                        </article>
+                    </div>
+                    <button class="button button_tablet-center-x" type="button">Рейтинг направлений</button>
+                </div>
+            </section>
+        </main>
         <dialog class="mobile-menu" id="mobileMenu" aria-label="Мобильное меню">
             <div class="mobile-menu__close-button">
                 <button class="button-transparent button-icon header__button-transparent mobile-menu__button-transparent" onclick="mobileMenu.close()" type="button">

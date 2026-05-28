@@ -1,11 +1,36 @@
 @media (width <= 1100px)
 
+    .banner
+        &__form
+            display: grid
+            grid-template-columns: repeat(2, 1fr)
+            justify-items: center
+
     .header
         gap: 24px
         &__list-row
             column-gap: 14px
 
+    .media-box
+        --indent-ads: 50px
+
+    .best-program
+        &__img-box
+            grid-template-columns: repeat(2, 200px)
+
+@media (768px < width < 1100px)
+
+    .card-box
+        flex-wrap: wrap
+
 @media (width <= 1024px)
+
+    .section
+        padding-block: var(--section-padding-block-tablet)
+
+    .button
+        &_tablet-center-x
+            align-self: center
 
     .tablet-hidden
         display: none
@@ -14,7 +39,49 @@
         display: block
 
     .header
-        grid-template-columns: auto  auto
+        grid-template-columns: auto auto
         justify-content: space-between
 
+    .about-hike
+        flex-direction: column-reverse
+
+    .best-program
+        flex-direction: column
+
 @media (width <= 768px)
+
+    .section
+        padding-block: var(--section-padding-block-mobile)
+
+    .mobile-hidden
+        display: none
+
+    .banner
+        &__inner
+            padding-top: 20px
+            padding-bottom: 50px
+        &__form
+            display: contents
+
+    .media-box
+        --indent-ads: 0
+        &__item
+            width: 100%
+
+    .card-box
+        scroll-snap-type: x mandatory
+        overflow-x: scroll
+        max-width: 100%
+        justify-content: start
+
+    .card
+        width: 320px
+        height: 400px
+        flex-shrink: 0
+        scroll-snap-align: start
+        &__body
+            translate: 0 65%
+            padding: 16px
+            gap: 16px
+        &__button
+            align-self: start

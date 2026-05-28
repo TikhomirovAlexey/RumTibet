@@ -36,3 +36,7 @@
 @mixin flex-column-center($gap: 0)
     @include flex-row-center($gap)
     flex-direction: column
+
+@mixin blur
+    background-color: var(--color-lite-opacity-20)
+    backdrop-filter: blur(3px)
